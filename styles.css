@@ -1,0 +1,201 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.full-height {
+    height: 100%;
+}
+.pageone {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #595656;
+    color: #A68256;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.pageone h1 {
+    margin: 2rem 0 0 0;
+}
+.pageone header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pageone .img-logo {
+    margin-bottom: 2rem;
+}
+.navbar {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    display: inline-block;
+    text-align: center;
+}
+.one a:link,
+.one a:visited {
+    text-decoration: none;
+    color: #A68256;
+}
+.navbar a:hover {
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ffffff;
+}
+.navbar span {
+    padding: 0 0.5rem;
+    font-weight: bold;
+}
+.pagetwo,
+.pagethree,
+.pagefour {
+    display: flex;
+    text-align: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+}
+.pagetwo .left,
+.pagethree .left,
+.pagefour .left {
+    flex-basis: 50%;
+    background-color: #A68256;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pagetwo .img-about,
+.pagethree .img-work,
+.pagefour .img-contact {
+    display: block;
+    margin: 0 auto;
+    margin-top: 7rem;
+}
+.pagetwo .right,
+.pagethree .right,
+.pagefour .right {
+    flex-basis: 50%;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 2rem;
+    text-align: left;
+}
+.two a:link,
+.two a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+.pagethree .left {
+    background-color: #ffffff;
+    color: #A68256;
+}
+.pagethree .right {
+    background-color: #EFEFEF;
+    color: #000000;
+}
+.three a:link,
+.three a:visited {
+    text-decoration: none;
+    color: #A68256;
+}
+.three a:hover {
+    border-bottom: 2px solid #000000;
+}
+.pagetwo .img-me {
+    float: left;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10px;
+    margin: 0.5rem 1rem 1rem 0;
+}
+.pagetwo:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.pagetwo h2 {
+    margin: 0;
+}
+.pagefour .left {
+    background-color: #595656;
+    color: #A68256;
+}
+.pagefour .right {
+    background-color: #A68256;
+    color: #000000;
+}
+.four a:link,
+.four a:visited {
+    text-decoration: none;
+    color: #A68256;
+}
+.pagefour fieldset {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.pagefour legend {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.pagefour label {
+    display: block;
+    padding-bottom: 0.3rem;
+}
+.pagefour input:not([type="checkbox"]), select, textarea {
+    display: block;
+    margin-bottom: 1rem;
+    width: 25rem;
+    font-family: Verdana, sans-serif;
+    font-size: 1rem;
+    padding: 0 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #EFEFEF;
+}
+.pagefour h2 {
+    margin-top: 0;
+}
+.pagefour textarea {
+    height: 5rem;
+}
+.pagefour button {
+    font-size: 1rem;
+    background-color: #8C2639;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    border: none;
+}
+.pagefour button:hover {
+    background-color: #ffffff;
+    color: #8C2639;
+}
