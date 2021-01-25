@@ -7,10 +7,13 @@ html {
     box-sizing: inherit;
 }
 body {
-    font-family: Verdana, sans-serif;
+    font-family: sans-serif, Verdana;
     margin: 0;
     padding: 0;
     height: 100%;
+}
+h1, nav {
+    font-family: 'Michroma', sans-serif;
 }
 .full-height {
     height: 100%;
@@ -19,7 +22,7 @@ body {
     display: flex;
     text-align: center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     background-color: #595656;
@@ -33,6 +36,8 @@ body {
 }
 .pageone .img-logo {
     margin-bottom: 2rem;
+    width: 450px;
+    height: 450px;
 }
 .navbar {
     text-align: center;
@@ -67,12 +72,12 @@ body {
     display: flex;
     text-align: center;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     font-size: 1rem;
 }
-.pagetwo .left,
+.pagetwo .left:not(.logo-about),
 .pagethree .left,
 .pagefour .left {
     flex-basis: 50%;
@@ -81,18 +86,26 @@ body {
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: bold;
-    align-self: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
-.pagetwo .img-about,
-.pagethree .img-work,
-.pagefour .img-contact {
-    display: block;
-    margin: 0 auto;
-    margin-top: 7rem;
-    order: -1;
+.pagetwo .logo-about,
+.pagethree .logo-work,
+.pagefour .logo-contact {
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-top: auto;
+}
+.pagethree .logo-work {
+    color: #000000;
+}
+.pagetwo .navbar,
+.pagethree .navbar,
+.pagefour .navbar {
+    margin-top: auto;
 }
 .pagetwo .right,
 .pagethree .right,
@@ -124,22 +137,26 @@ body {
 .three a:hover {
     border-bottom: 2px solid #000000;
 }
+.pagetwo .right {
+    position: relative;
+}
 .pagetwo .img-me {
     float: left;
     width: 10rem;
     height: 10rem;
     border-radius: 10px;  
-    position: relative;
-    top: 1rem;
-    left: -7rem;
+    position: absolute;
+    top: 4rem;
+    left: -5rem;
 }
 .pagetwo:after {
     content: "";
     display: table;
     clear: both;
 }
-.pagetwo h2 {
-    margin: 0;
+.pagetwo h2,
+.pagetwo p {
+    margin-left: 6rem;
 }
 .pagefour .left {
     background-color: #595656;
@@ -174,7 +191,7 @@ body {
     display: block;
     margin-bottom: 1rem;
     width: 25rem;
-    font-family: Verdana, sans-serif;
+    font-family: sans-serif, Verdana;
     font-size: 1rem;
     padding: 0 1rem;
     border-radius: 10px;
