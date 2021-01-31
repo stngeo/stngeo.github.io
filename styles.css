@@ -12,7 +12,11 @@ body {
     padding: 0;
     height: 100%;
 }
-h1, nav {
+h1,
+h2,
+nav,
+.position p,
+blockquote {
     font-family: 'Michroma', sans-serif;
 }
 .full-height {
@@ -115,12 +119,13 @@ h1, nav {
     background-color: #ffffff;
     color: #000000;
     padding: 2rem;
-    text-align: left;
+    text-align: justify;
 }
 .pagethree .right {
     display: flex;
     flex-direction: column;
     padding: 0;
+    margin: 2rem;
 }
 .two a:link,
 .two a:visited {
@@ -134,7 +139,6 @@ h1, nav {
 .pagethree .right {
     background-color: #EFEFEF;
     color: #000000;
-    margin: 2rem;
 }
 .three a:link,
 .three a:visited {
@@ -146,6 +150,13 @@ h1, nav {
 }
 .pagetwo .right {
     position: relative;
+}
+.pagetwo blockquote {
+    text-align: right;
+    font-size: 1.5rem;
+}
+blockquote p {
+    text-align: left;
 }
 .pagetwo .img-me {
     float: left;
@@ -251,7 +262,7 @@ h1, nav {
     backface-visibility: hidden;
 }
 .first .flip-box-front {
-    background-color: #595656;
+    background-color: #A68256;
     color: #ffffff;
 }
 .first .flip-box-back {
@@ -260,7 +271,7 @@ h1, nav {
     transform: rotateX(180deg);
 }
 .second .flip-box-front {
-    background-color: #A68256;
+    background-color: #595656;
     color: #ffffff;
 }
 .second .flip-box-back {
@@ -273,7 +284,32 @@ h1, nav {
     color: #000000;
 }
 .third .flip-box-back {
-    background-color: #595656;
+    background-color: #A68256;
     color: #ffffff;
     transform: rotateX(180deg);
+}
+.first .flip-box-front,
+.second .flip-box-front,
+.third .flip-box-front {
+    display: flex;
+    flex: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo-company {
+    width: 6rem;
+    height: 6rem;
+    order: -1;
+    margin: 0 2rem;
+    border-radius: 10px;
+}
+.position p {
+    text-align: left;
+    text-transform: uppercase;
+}
+.first p {
+    color: #000000;
+}
+.second p {
+    color: #A68256;
 }
