@@ -6,6 +6,7 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
 body {
     font-family: sans-serif, Verdana;
     margin: 0;
@@ -125,7 +126,7 @@ blockquote {
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin: 2rem;
+    margin: 0.3rem;
 }
 .two a:link,
 .two a:visited {
@@ -151,6 +152,10 @@ blockquote {
 .pagetwo .right {
     position: relative;
 }
+.pagetwo p:not(:last-of-type),
+ol {
+    line-height: 1.3rem;
+}
 .pagetwo blockquote {
     text-align: right;
     font-size: 1.5rem;
@@ -173,8 +178,23 @@ blockquote p {
     clear: both;
 }
 .pagetwo h2,
-.pagetwo p {
+.pagetwo p,
+.pagetwo ol,
+.pagetwo blockquote {
     margin-left: 6rem;
+}
+.pagetwo ol {
+    padding-left: 1rem;
+}
+.pagetwo .external:link,
+.pagetwo .external:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: #A68256;
+}
+.pagetwo .external:hover {
+    text-decoration: underline;
+    color: #A68256;
 }
 .pagefour .left {
     background-color: #595656;
@@ -312,4 +332,29 @@ blockquote p {
 }
 .second p {
     color: #A68256;
+}
+.details {
+    margin: auto;
+    padding: 0 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.details h2 {
+    border-bottom: 2px solid #A68256;
+    padding: 0 0 0.5rem 0;
+}
+.details .company {
+    flex-basis: 30%;
+}
+.details .results {
+    flex-basis: 70%;
+    text-align: justify;
+}
+.results ul {
+    margin: 0;
+    padding: 0;
 }
