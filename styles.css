@@ -6,7 +6,6 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
 body {
     font-family: sans-serif, Verdana;
     margin: 0;
@@ -23,6 +22,7 @@ blockquote {
 .full-height {
     height: 100%;
 }
+/* Page one and navbar */
 .pageone {
     display: flex;
     text-align: center;
@@ -58,11 +58,6 @@ blockquote {
     display: inline-block;
     text-align: center;
 }
-.one a:link,
-.one a:visited {
-    text-decoration: none;
-    color: #A68256;
-}
 .navbar a:hover {
     text-decoration: none;
     padding-bottom: 0.5rem;
@@ -72,6 +67,30 @@ blockquote {
     padding: 0 0.5rem;
     font-weight: bold;
 }
+.one a:link,
+.one a:visited {
+    text-decoration: none;
+    color: #A68256;
+}
+.two a:link,
+.two a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+.three a:link,
+.three a:visited {
+    text-decoration: none;
+    color: #A68256;
+}
+.three a:hover {
+    border-bottom: 2px solid #000000;
+}
+.four a:link,
+.four a:visited {
+    text-decoration: none;
+    color: #A68256;
+}
+/* Half and half layout of pages two - four */
 .pagetwo,
 .pagethree,
 .pagefour {
@@ -122,33 +141,7 @@ blockquote {
     padding: 2rem;
     text-align: justify;
 }
-.pagethree .right {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0.3rem;
-}
-.two a:link,
-.two a:visited {
-    text-decoration: none;
-    color: #000000;
-}
-.pagethree .left {
-    background-color: #ffffff;
-    color: #A68256;
-}
-.pagethree .right {
-    background-color: #EFEFEF;
-    color: #000000;
-}
-.three a:link,
-.three a:visited {
-    text-decoration: none;
-    color: #A68256;
-}
-.three a:hover {
-    border-bottom: 2px solid #000000;
-}
+/* Page two specifically */
 .pagetwo .right {
     position: relative;
 }
@@ -186,74 +179,30 @@ blockquote p {
 .pagetwo ol {
     padding-left: 1rem;
 }
-.pagetwo .external:link,
-.pagetwo .external:visited {
+.pagetwo .external-1:link,
+.pagetwo .external-1:visited {
     font-weight: bold;
     text-decoration: none;
     color: #A68256;
 }
-.pagetwo .external:hover {
+.pagetwo .external-1:hover {
     text-decoration: underline;
     color: #A68256;
 }
-.pagefour .left {
-    background-color: #595656;
-    color: #A68256;
-}
-.pagefour .right {
-    background-color: #A68256;
-    color: #000000;
-}
-.four a:link,
-.four a:visited {
-    text-decoration: none;
-    color: #A68256;
-}
-.pagefour fieldset {
-    border: 2px solid #000000;
-    border-radius: 10px;
-    margin-bottom: 1.5rem;
+/* Page three specifically */
+.pagethree .right {
     display: flex;
     flex-direction: column;
-}
-.pagefour legend {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-.pagefour label {
-    display: block;
-    padding-bottom: 0.3rem;
-}
-.pagefour input:not([type="checkbox"]), select, textarea {
-    display: block;
-    margin-bottom: 1rem;
-    width: 25rem;
-    font-family: sans-serif, Verdana;
-    font-size: 1rem;
-    padding: 0 1rem;
-    border-radius: 10px;
-    border: none;
+    padding: 0;
+    margin: 0.3rem;
     background-color: #EFEFEF;
+    color: #000000;
 }
-.pagefour h2 {
-    margin-top: 0;
-}
-.pagefour textarea {
-    height: 5rem;
-}
-.pagefour button {
-    font-size: 1rem;
-    background-color: #8C2639;
-    color: #ffffff;
-    padding: 0.5rem 2rem;
-    border-radius: 10px;
-    border: none;
-}
-.pagefour button:hover {
+.pagethree .left {
     background-color: #ffffff;
-    color: #8C2639;
+    color: #A68256;
 }
+/* Flip box */
 .flip-box {
     background-color: transparent;
     width: 100%;
@@ -330,7 +279,7 @@ blockquote p {
 .first p {
     color: #000000;
 }
-.second p {
+.flip-box-front p:not(.first p) {
     color: #A68256;
 }
 .details {
@@ -347,14 +296,94 @@ blockquote p {
     border-bottom: 2px solid #A68256;
     padding: 0 0 0.5rem 0;
 }
-.details .company {
+.details .company-1,
+.details .company-2,
+.details .company-3 {
     flex-basis: 30%;
 }
-.details .results {
+.details .results-1,
+.details .results-2,
+.details .results-3 {
     flex-basis: 70%;
     text-align: justify;
 }
-.results ul {
+.results-1 ul,
+.results-2 ul,
+.results-3 ul {
     margin: 0;
     padding: 0;
+}
+.company-2 h2,
+.results-2 h2 {
+    border-color: #595656;
+}
+.company-3 h2,
+.results-3 h2 {
+    border-color: #000000;
+}
+.pagethree .external-2:link,
+.pagethree .external-2:visited {
+    text-decoration: none;
+    color: #000000;
+}
+.pagethree .external-2:hover {
+    text-decoration: underline;
+}
+.company-3 .external-2:link,
+.company-3 .external-2:visited {
+    color: #ffffff;
+}
+/* Page four and contact form specifically */
+.pagefour .left {
+    background-color: #595656;
+    color: #A68256;
+}
+.pagefour .right {
+    background-color: #A68256;
+    color: #000000;
+}
+.pagefour fieldset {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.pagefour legend {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.pagefour label {
+    display: block;
+    padding-bottom: 0.3rem;
+}
+.pagefour input:not([type="checkbox"]), select, textarea {
+    display: block;
+    margin-bottom: 1rem;
+    width: 25rem;
+    font-family: sans-serif, Verdana;
+    font-size: 1rem;
+    padding: 0 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #EFEFEF;
+}
+.pagefour h2 {
+    margin-top: 0;
+}
+.pagefour textarea {
+    height: 5rem;
+}
+.pagefour button {
+    font-size: 1rem;
+    background-color: #8C2639;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    border: none;
+}
+.pagefour button:hover {
+    background-color: #ffffff;
+    color: #8C2639;
 }
