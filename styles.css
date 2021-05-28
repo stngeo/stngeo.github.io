@@ -44,6 +44,9 @@ blockquote {
     margin-bottom: 2rem;
     width: 450px;
     height: 450px;
+    border-radius: 50%;
+    border: 1px solid #A68256;
+    cursor: grab;
 }
 .navbar {
     text-align: center;
